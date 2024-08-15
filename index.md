@@ -24,7 +24,7 @@ title: Home
 
 <div class="content-section">
     <h2>About {{ site.title }}</h2>
-    <p>A. Kravitz is making waves in the rap scene with hard-hitting lyrics and innovative beats. From gritty street narratives to introspective journeys, my music aims to connect with listeners on a deeper level. With my latest release "{{ site.latest_track_name }}", I'm pushing the boundaries of the genre and telling real stories that resonate.</p>
+    <p>{{ site.title }} is making waves in the rap scene with hard-hitting lyrics and innovative beats. From gritty street narratives to introspective journeys, my music aims to connect with listeners on a deeper level. With my latest release "{{ site.latest_track_name }}", I'm pushing the boundaries of the genre and telling real stories that resonate.</p>
 </div>
 
 <div class="content-section">
