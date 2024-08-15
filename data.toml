@@ -1,21 +1,21 @@
 name = "A KRAVITZ"
-description = "Hip-hop artist crafting introspective lyrics with thoughtful wordplay and vivid imagery."
+description = "Hip-hop artist out of LA"
 keywords = "A KRAVITZ, rapper, hip-hop, music, introspective lyrics, thoughtful wordplay"
 image = "akravitz.jpeg"  # You'll need to replace this with your actual image file
 theme = "light"
 # primary_color = "#ff4500"  # Mars-like orange-red color
 text_align = "center"
 # gtag_id = "G-33WB8LVHR6"  # You may want to replace this with your own Google Analytics ID if you have one
-base_url = "akravitzmusic.com"  # Replace with your actual website URL
+base_url = "https://akravitzmusic.com"  # Replace with your actual website URL
 
 [[sections]]
 title = "Music"
-description = "Check out some of my tracks"
+description = "Here is some of my music"
 direction = "column"
 item_style = "outline"
 [[sections.items]]
 title = "Made It"
-description = "A journey through personal growth and self-reflection"
+description = "A song about being told I would fail, but ultimately pushing through and succeeding"
 url = "https://open.spotify.com/track/6u2RcZ2kxhcV8DhqoTsCez"
 # [[sections.items]]
 # title = "Icarus"  # Replace with actual song titles
@@ -38,8 +38,14 @@ url = "https://www.tiktok.com/@akravitzmusic"
 title = "Instagram"
 url = "https://www.instagram.com/akravitzmusic"
 [[sections.items]]
+title = "Youtube"
+url = "https://www.youtube.com/@akravitzmusic"
+[[sections.items]]
 title = "Spotify"
 url = "https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn"
 [[sections.items]]
 title = "Apple Music"
 url = "https://music.apple.com/us/artist/a-kravitz/404363729"
+[[sections.items]]
+title = "Youtube Music"
+url = "https://music.youtube.com/channel/UCJ8tS4lATNUpJiFM7MWbycg"
