@@ -4,6 +4,7 @@ keywords = "A KRAVITZ, rapper, hip-hop, music, introspective lyrics, thoughtful 
 image = "akravitz.jpeg"  # You'll need to replace this with your actual image file
 theme = "dark"
 # primary_color = "#ff4500"  # Mars-like orange-red color
+primary_color = "#d81b60"
 text_align = "center"
 # gtag_id = "G-33WB8LVHR6"  # You may want to replace this with your own Google Analytics ID if you have one
 base_url = "https://akravitzmusic.com"  # Replace with your actual website URL
