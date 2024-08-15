@@ -189,6 +189,51 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- ... (rest of the HTML remains the same) ... -->
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="/assets/img/logos/logo_256x256.png" alt="{{ site.title }} Logo" class="logo"
+                     srcset="/assets/img/logos/logo_128x128.png 128w,
+                             /assets/img/logos/logo_256x256.png 256w,
+                             /assets/img/logos/logo_512x512.png 512w"
+                     sizes="(max-width: 1024px) 128px, 256px">
+                <h1>{{ site.title }}</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!-- Commented out pages for future addition
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        -->
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-social-links">
+                <a href="https://www.tiktok.com/@akravitzmusic" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/akravitzmusic" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" title="Spotify" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://music.apple.com/us/artist/a-kravitz/404363729" title="Apple Music" target="_blank"><i class="fab fa-apple"></i></a>
+            </div>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.content-section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
