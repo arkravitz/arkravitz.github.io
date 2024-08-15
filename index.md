@@ -21,7 +21,7 @@ title: Home
 <div class="content-section">
     <h2>Connect on Social Media</h2>
     <p>Stay updated with my latest music, behind-the-scenes content, and more!</p>
-    <div class="social-links">
+    <div class="content-social-links">
         <a href="https://www.tiktok.com/@akravitzmusic" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
         <a href="https://www.instagram.com/akravitzmusic" title="Instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" title="Spotify" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>

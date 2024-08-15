@@ -100,7 +100,7 @@
         .btn:hover {
             background-color: #1ed760;
         }
-        .social-links {
+        .header-social-links {
             display: flex;
             justify-content: flex-start;
             gap: 1rem;
@@ -108,12 +108,26 @@
             bottom: 2rem;
             left: 2rem;
         }
-        .social-links a {
+        .header-social-links a {
             color: var(--text-color);
             font-size: 1.2rem;
             transition: color 0.3s ease;
         }
-        .social-links a:hover {
+        .header-social-links a:hover {
+            color: var(--accent-color);
+        }
+        .content-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .content-social-links a {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .content-social-links a:hover {
             color: var(--accent-color);
         }
         @media (max-width: 768px) {
@@ -125,7 +139,7 @@
                 top: 0;
                 z-index: 1000;
             }
-            .social-links {
+            .header-social-links {
                 position: static;
                 justify-content: center;
                 margin-top: 2rem;
@@ -156,7 +170,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="social-links">
+            <div class="header-social-links">
                 <a href="https://www.tiktok.com/@akravitzmusic" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
                 <a href="https://www.instagram.com/akravitzmusic" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" title="Spotify" target="_blank"><i class="fab fa-spotify"></i></a>
