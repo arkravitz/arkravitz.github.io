@@ -14,10 +14,13 @@ title: Home
 </div>
 
 <div class="content-section">
-    <h2>Follow Me on TikTok</h2>
-    <p>Stay updated with my latest music, behind-the-scenes content, and more on TikTok!</p>
-    <a href="https://www.tiktok.com/@akravitzmusic" class="btn" target="_blank">@akravitzmusic on TikTok</a>
-    <!-- If you have a specific TikTok video you want to feature, you can embed it here -->
+    <h2>Connect on Social Media</h2>
+    <p>Stay updated with my latest music, behind-the-scenes content, and more!</p>
+    <div class="button-group">
+        <a href="https://www.tiktok.com/@akravitzmusic" class="btn" target="_blank">Follow on TikTok</a>
+        <a href="https://www.instagram.com/akravitzmusic" class="btn" target="_blank">Follow on Instagram</a>
+    </div>
+    <!-- If you have a specific TikTok or Instagram post you want to feature, you can embed it here -->
 </div>
 
 <div class="content-section">
@@ -39,6 +42,7 @@ title: Home
     <p>Follow me on social media for the latest updates, exclusive content, and new releases.</p>
     <div class="social-links">
         <a href="https://www.tiktok.com/@akravitzmusic" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://www.instagram.com/akravitzmusic" title="Instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" title="Spotify" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
         <a href="https://music.apple.com/us/artist/a-kravitz/404363729" title="Apple Music" target="_blank"><i class="fab fa-apple"></i> Apple Music</a>
     </div>
