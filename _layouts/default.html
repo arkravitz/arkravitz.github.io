@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }} - {{ page.title }}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logos/logo_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logos/logo_16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logos/logo_128x128.png">
     <style>
         :root {
             --bg-color: #121212;
@@ -30,11 +33,20 @@
             padding: 2rem;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
+            position: relative;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
         .logo {
             max-width: 150px;
+            width: 100%;
+            height: auto;
             margin-bottom: 1rem;
         }
         header h1 {
@@ -43,10 +55,14 @@
             font-weight: 700;
             text-align: center;
         }
+        nav {
+            margin-top: 2rem;
+            width: 100%;
+        }
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin-top: 2rem;
+            margin: 0;
         }
         nav ul li {
             margin-bottom: 1rem;
@@ -86,9 +102,11 @@
         }
         .social-links {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1rem;
-            margin-top: 2rem;
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
         }
         .social-links a {
             color: var(--text-color);
@@ -107,6 +125,11 @@
                 top: 0;
                 z-index: 1000;
             }
+            .social-links {
+                position: static;
+                justify-content: center;
+                margin-top: 2rem;
+            }
         }
     </style>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
@@ -114,18 +137,25 @@
 <body>
     <div class="container">
         <header>
-            <img src="/assets/img/logo.png" alt="{{ site.title }} Logo" class="logo">
-            <h1>{{ site.title }}</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <!-- Commented out pages for future addition
-                    <li><a href="music.html">Music</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    -->
-                </ul>
-            </nav>
+            <div class="header-content">
+                <img src="/assets/img/logos/logo_256x256.png" alt="{{ site.title }} Logo" class="logo"
+                     srcset="/assets/img/logos/logo_128x128.png 128w,
+                             /assets/img/logos/logo_256x256.png 256w,
+                             /assets/img/logos/logo_512x512.png 512w"
+                     sizes="(max-width: 768px) 128px,
+                            256px">
+                <h1>{{ site.title }}</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <!-- Commented out pages for future addition
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        -->
+                    </ul>
+                </nav>
+            </div>
             <div class="social-links">
                 <a href="https://www.tiktok.com/@akravitzmusic" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
                 <a href="https://www.instagram.com/akravitzmusic" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
