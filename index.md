@@ -4,11 +4,11 @@ title: Home
 ---
 
 <div class="content-section">
-    <h2>Latest Release: "Made It"</h2>
-    <p>"Made It" delves into the complexities of personal growth and self-reflection. This track showcases A KRAVITZ's signature style of introspective lyrics layered over compelling beats.</p>
+    <h2>Latest Release: "{{ site.latest_track_name }}"</h2>
+    <p>"{{ site.latest_track_name }}" delves into the complexities of personal growth and self-reflection. This track showcases A KRAVITZ's signature style of introspective lyrics layered over compelling beats.</p>
     <iframe src="https://open.spotify.com/embed/track/6u2RcZ2kxhcV8DhqoTsCez" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-bottom: 1.5rem;"></iframe>
     <div class="button-group" style="display: flex; gap: 1rem;">
-        <a href="https://open.spotify.com/track/6u2RcZ2kxhcV8DhqoTsCez" class="btn" target="_blank">Listen on Spotify</a>
+        <a href="https://open.spotify.com/track/{{ site.latest_track_id }}" class="btn" target="_blank">Listen on Spotify</a>
         <a href="https://music.apple.com/us/artist/a-kravitz/404363729" class="btn" target="_blank">Listen on Apple Music</a>
     </div>
 </div>
