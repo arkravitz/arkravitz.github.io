@@ -17,14 +17,14 @@ item_style = "outline"
 title = "Made It"
 description = "A journey through personal growth and self-reflection"
 url = "https://open.spotify.com/track/6u2RcZ2kxhcV8DhqoTsCez"
-[[sections.items]]
-title = "Icarus"  # Replace with actual song titles
-description = "Exploring the balance between ambition and caution"
-url = "https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn"  # Replace with actual song URL when available
-[[sections.items]]
-title = "Leaning On"  # Replace with actual song titles
-description = "Navigating relationships and personal struggles"
-url = "https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn"  # Replace with actual song URL when available
+# [[sections.items]]
+# title = "Icarus"  # Replace with actual song titles
+# description = "Exploring the balance between ambition and caution"
+# url = "https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn"  # Replace with actual song URL when available
+# [[sections.items]]
+# title = "Leaning On"  # Replace with actual song titles
+# description = "Navigating relationships and personal struggles"
+# url = "https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn"  # Replace with actual song URL when available
 
 [[sections]]
 title = "Links"
