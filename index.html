@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQHXRVW9D7"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'G-NQHXRVW9D7');
-	</script>
-        <meta charset="utf-8">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-        <link rel="icon" href="assets/images/favicon.png" type="image/webp">
-        <title>A KRAVITZ</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --primary-color: #d81b60;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Snowfall Background Animation -->
-        <section class="animated-background">
-            <div id="stars1"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-        </section>
-        <!-- End of Snowfall Background Animation -->
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQHXRVW9D7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <div class="min-h-full flex-h-center" id="background_div">
-            <input type="hidden" value="https://akravitzmusic.com" id="app-url">
-            <input type="hidden" value="null" id="is-featured">
-            <canvas id="bg-canvas" class="background-overlay"></canvas>
+        gtag('config', 'G-NQHXRVW9D7');
+    </script>
+    <meta charset="utf-8">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="icon" href="assets/images/favicon.png" type="image/webp">
+    <title>A KRAVITZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d81b60;
+        }
+    </style>
+</head>
 
-            <div class="mt-48 page-full-wrap relative ">
-                <input type="hidden" value="creator-page" id="page-type">
-                <img class="display-image m-auto" data-src="assets/images/akravitz.jpeg" src="assets/images/akravitz.jpeg" alt="A KRAVITZ"/>
-                <h2 class="page-title page-text-color page-text-font mt-16 text-center">A KRAVITZ</h2>
-                <div class="page-bioline page-text-color text-center">Hip-hop artist</div>
-                       
-                <div class="mt-24">
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.tiktok.com/@akravitzmusic" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/tiktok.webp" src="assets/images/tiktok.webp" alt="TikTok @ akravitzmusic"/>
-                            <span class="item-title text-center">TikTok @ akravitzmusic</span>
-                        </a>
-                    </div>
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.instagram.com/akravitzmusic" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/instagram.png" src="assets/images/instagram.png" alt="Instagram @ akravitzmusic"/>
-                            <span class="item-title text-center">Instagram @ akravitzmusic</span>
-                        </a>
-                    </div>
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.youtube.com/@akravitzmusic" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/youtube.png" src="assets/images/youtube.png" alt="YouTube @ akravitzmusic"/>
-                            <span class="item-title text-center">YouTube @ akravitzmusic</span>
-                        </a>
-                    </div>
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/spotify.png" src="assets/images/spotify.png" alt="Spotify @ A KRAVITZ"/>
-                            <span class="item-title text-center">Spotify @ A KRAVITZ</span>
-                        </a>
-                    </div>
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://music.apple.com/us/artist/a-kravitz/404363729" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/apple-music.png" src="assets/images/apple-music.png" alt="Apple Music @ A KRAVITZ"/>
-                            <span class="item-title text-center">Apple Music @ A KRAVITZ</span>
-                        </a>
-                    </div>
-                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://music.youtube.com/channel/UCJ8tS4lATNUpJiFM7MWbycg" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/youtube-music.png" src="assets/images/ytmusic.png" alt="YouTube Music @ A KRAVITZ"/>
-                            <span class="item-title text-center">YouTube Music @ A KRAVITZ</span>
-                        </a>
-                    </div>
-                </div>                                                                                
+<body>
+    <!-- Snowfall Background Animation -->
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- End of Snowfall Background Animation -->
+
+    <div class="min-h-full flex-h-center" id="background_div">
+        <input type="hidden" value="https://akravitzmusic.com" id="app-url">
+        <input type="hidden" value="null" id="is-featured">
+        <canvas id="bg-canvas" class="background-overlay"></canvas>
+
+        <div class="mt-48 page-full-wrap relative ">
+            <input type="hidden" value="creator-page" id="page-type">
+            <img class="display-image m-auto" data-src="assets/images/akravitz.jpeg" src="assets/images/akravitz.jpeg"
+                alt="A KRAVITZ" />
+            <h2 class="page-title page-text-color page-text-font mt-16 text-center">A KRAVITZ</h2>
+            <div class="page-bioline page-text-color text-center">A KRAVITZ is a rapper and producer blending technical precision with musical artistry to craft unique hip-hop tracks. Leaving behind a career in engineering, he's on a mission to connect and inspire through music. If you're seeing this, you're early—join A KRAVITZ as he builds his empire from the ground up.</div>
+
+            <div class="mt-24">
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://www.tiktok.com/@akravitzmusic" data-type="page_item">
+                        <img class="link-each-image" data-src="assets/images/tiktok.webp"
+                            src="assets/images/tiktok.webp" alt="TikTok @ akravitzmusic" />
+                        <span class="item-title text-center">TikTok @ akravitzmusic</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://www.instagram.com/akravitzmusic" data-type="page_item">
+                        <img class="link-each-image" data-src="assets/images/instagram.png"
+                            src="assets/images/instagram.png" alt="Instagram @ akravitzmusic" />
+                        <span class="item-title text-center">Instagram @ akravitzmusic</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://www.youtube.com/@akravitzmusic" data-type="page_item">
+                        <img class="link-each-image" data-src="assets/images/youtube.png"
+                            src="assets/images/youtube.png" alt="YouTube @ akravitzmusic" />
+                        <span class="item-title text-center">YouTube @ akravitzmusic</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" data-type="page_item">
+                        <img class="link-each-image" data-src="assets/images/spotify.png"
+                            src="assets/images/spotify.png" alt="Spotify @ A KRAVITZ" />
+                        <span class="item-title text-center">Spotify @ A KRAVITZ</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://music.apple.com/us/artist/a-kravitz/404363729" data-type="page_item">
+                        <img class="link-each-image" data-src="assets/images/apple-music.png"
+                            src="assets/images/apple-music.png" alt="Apple Music @ A KRAVITZ" />
+                        <span class="item-title text-center">Apple Music @ A KRAVITZ</span>
+                    </a>
+                </div>
+                <div class="page-item-wrap relative">
+                    <div class="page-item flex-both-center absolute"></div>
+                    <a target="_blank" class="page-item-each py-10 flex-both-center"
+                        href="https://music.youtube.com/channel/UCJ8tS4lATNUpJiFM7MWbycg" data-type="page_item">
+                        <img class="link-each-image" data-src="assets/images/youtube-music.png"
+                            src="assets/images/ytmusic.png" alt="YouTube Music @ A KRAVITZ" />
+                        <span class="item-title text-center">YouTube Music @ A KRAVITZ</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
