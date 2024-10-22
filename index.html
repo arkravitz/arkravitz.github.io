@@ -102,50 +102,41 @@
 							<span class="item-title text-center">YouTube Music @ A KRAVITZ</span>
 						</a>
 					</div>
-					<div class="form-container">
-						<h2>Subscribe for Updates!</h2>
-						<form id="emailForm">
+					<div class="subscribe-container">
+						<p class="subscribe-text">Subscribe for updates</p>
+						<form id="subscriptionForm">
 							<input type="text" id="name" name="name" placeholder="Your Name" />
-							<input type="email" id="email" name="email" placeholder="Your Email" required />
-							<button type="submit">Subscribe</button>
+							<input type="email" id="emailInput" class="email-input" placeholder="Enter your email" required>
+							<button type="submit" class="subscribe-button">Subscribe</button>
+							<p id="subscriptionMessage" class="subscription-message"></p>
 						</form>
-						<p id="responseMessage"></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="page-item-wrap relative">
-			<div class="page-item flex-both-center absolute"></div>
-			<form id="contactForm" class="page-item-each py-10 flex-both-center" action="https://script.google.com/macros/s/AKfycbya1P1ji0X_lsZj7pXsK-i56UUJOfgCGtk98uI1C0DmGdqzHpJUcBLqrN_qgUInjDk/exec" method="POST" target="_blank">
-				<input type="text" name="name" placeholder="Your Name (Optional)" class="subsc-email page-text-font" style="margin-right: 10px; width: 200px;">
-				<input type="email" name="email" placeholder="Your Email" class="subsc-email page-text-font" required style="margin-right: 10px; width: 200px;">
-				<button type="submit" class="dark-btn">Submit</button>
-			</form>
-		</div>
 		<script>
-			document.getElementById('emailForm').addEventListener('submit', function (e) {
-				e.preventDefault(); // Prevent the default form submission
-
-				const name = document.getElementById('name').value;
-				const email = document.getElementById('email').value;
-
-				fetch('https://script.google.com/macros/s/AKfycbya1P1ji0X_lsZj7pXsK-i56UUJOfgCGtk98uI1C0DmGdqzHpJUcBLqrN_qgUInjDk/exec', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({ name: name, email: email }),
-				})
-					.then(response => response.text())
-					.then(data => {
-						document.getElementById('responseMessage').textContent = 'Subscription successful!';
-						document.getElementById('emailForm').reset(); // Clear the form
-					})
-					.catch((error) => {
-						document.getElementById('responseMessage').textContent = 'Subscription failed. Please try again.';
-						console.error('Error:', error);
+			document.getElementById('subscriptionForm').addEventListener('submit', async function(event) {
+				event.preventDefault();
+				const email = document.getElementById('emailInput').value;
+				try {
+					const response = await fetch('https://script.google.com/macros/s/AKfycbya1P1ji0X_lsZj7pXsK-i56UUJOfgCGtk98uI1C0DmGdqzHpJUcBLqrN_qgUInjDk/exec', {
+						method: 'POST',
+						body: JSON.stringify({ email: email }),
+						headers: {
+							'Content-Type': 'application/json'
+						}
 					});
+					const result = await response.json();
+					if (result.success) {
+						document.getElementById('subscriptionMessage').textContent = 'Subscription successful!';
+					} else {
+						document.getElementById('subscriptionMessage').textContent = 'Something went wrong. Please try again.';
+					}
+				} catch (error) {
+					document.getElementById('subscriptionMessage').textContent = 'Error: Unable to subscribe at this time.';
+				}
 			});
 		</script>
+
 	</body>
 </html>
