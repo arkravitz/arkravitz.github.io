@@ -1452,16 +1452,44 @@ body,html{
     }
 }
 
-#contactForm {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+.form-container {
+    background-color: #000; /* Background color of the form */
+    padding: 20px;
+    border-radius: 8px;
+    color: #f0f0f0; /* Light text color for the form */
 }
 
-#contactForm input,
-#contactForm button {
-    border-radius: 8px;
-    height: 40px;
-    font-size: 16px;
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #f0f0f0; /* Adjust as needed */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Darker border for input */
+    background-color: #000; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #444; /* Button background */
+    color: #f0f0f0; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #666; /* Lighter on hover */
+}
+
+#responseMessage {
+    margin-top: 10px;
+    color: #f0f0f0;
 }
