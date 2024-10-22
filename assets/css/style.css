@@ -1451,3 +1451,17 @@ body,html{
         transform: translateY(-2000px);
     }
 }
+
+#contactForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#contactForm input,
+#contactForm button {
+    border-radius: 8px;
+    height: 40px;
+    font-size: 16px;
+}
