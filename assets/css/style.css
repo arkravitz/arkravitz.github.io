@@ -1532,7 +1532,7 @@ body,html{
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.3);
     border-top-color: #ff4757; /* Matches the button color */
-    animation: spin 0.8s linear infinite;
+    animation: spin 1s linear infinite;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1541,8 +1541,11 @@ body,html{
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
