@@ -1452,7 +1452,15 @@ body,html{
     }
 }
 
-/* Styling the subscription form container */
+/* Center the subscription form container */
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styling the subscription form */
 #subscriptionForm {
     display: flex;
     flex-direction: column;
@@ -1504,5 +1512,14 @@ body,html{
     color: #ff4757;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+    text-align: center;
+}
+
+/* Style the 'Subscribe for updates' text */
+.subscribe-text {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
     text-align: center;
 }
