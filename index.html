@@ -1,172 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQHXRVW9D7"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-
-			gtag('config', 'G-NQHXRVW9D7');
-		</script>
-		<meta charset="utf-8">
-		<link href="assets/css/style.css" rel="stylesheet">
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/webp">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
-		<link rel="icon" href="assets/images/favicon.png" type="image/webp">
-		<title>A KRAVITZ</title>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-		<style>
-:root {
-	--primary-color: #d81b60;
-}
-		</style>
-	</head>
-
-	<body>
-		<!-- Snowfall Background Animation -->
-		<section class="animated-background">
-			<div id="stars1"></div>
-			<div id="stars2"></div>
-			<div id="stars3"></div>
-		</section>
-		<!-- End of Snowfall Background Animation -->
-
-		<div class="min-h-full flex-h-center" id="background_div">
-			<input type="hidden" value="https://akravitzmusic.com" id="app-url">
-			<input type="hidden" value="null" id="is-featured">
-			<canvas id="bg-canvas" class="background-overlay"></canvas>
-
-			<div class="mt-48 page-full-wrap relative ">
-				<input type="hidden" value="creator-page" id="page-type">
-				<img class="display-image m-auto" data-src="assets/images/akravitz.png" src="assets/images/akravitz.png"
-													 alt="A KRAVITZ" />
-				<h2 class="page-title page-text-color page-text-font mt-16 text-center">A KRAVITZ</h2>
-				<div class="page-bioline page-text-color text-center">
-          VC-backed depression.<br/>
-          DIY artist.<br/>
-          Rhyme schemes saved my life.
-        </div>
-
-				<div class="mt-24">
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://www.tiktok.com/@akravitzmusic" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/tiktok.webp"
-										     src="assets/images/tiktok.webp" alt="TikTok @ akravitzmusic" />
-							<span class="item-title text-center">TikTok @ akravitzmusic</span>
-						</a>
-					</div>
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://www.instagram.com/akravitzmusic" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/instagram.png"
-										     src="assets/images/instagram.png" alt="Instagram @ akravitzmusic" />
-							<span class="item-title text-center">Instagram @ akravitzmusic</span>
-						</a>
-					</div>
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://www.youtube.com/@akravitzmusic" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/youtube.png"
-										     src="assets/images/youtube.png" alt="YouTube @ akravitzmusic" />
-							<span class="item-title text-center">YouTube @ akravitzmusic</span>
-						</a>
-					</div>
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/spotify.png"
-										     src="assets/images/spotify.png" alt="Spotify @ A KRAVITZ" />
-							<span class="item-title text-center">Spotify @ A KRAVITZ</span>
-						</a>
-					</div>
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://music.apple.com/us/artist/a-kravitz/404363729" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/apple-music.png"
-										     src="assets/images/apple-music.png" alt="Apple Music @ A KRAVITZ" />
-							<span class="item-title text-center">Apple Music @ A KRAVITZ</span>
-						</a>
-					</div>
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://music.youtube.com/channel/UCJ8tS4lATNUpJiFM7MWbycg" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/youtube-music.png"
-										     src="assets/images/ytmusic.png" alt="YouTube Music @ A KRAVITZ" />
-							<span class="item-title text-center">YouTube Music @ A KRAVITZ</span>
-						</a>
-					</div>
-					<div class="page-item-wrap relative">
-						<div class="page-item flex-both-center absolute"></div>
-						<a target="_blank" class="page-item-each py-10 flex-both-center"
-								   href="https://soundcloud.com/akravitzmusic" data-type="page_item">
-							<img class="link-each-image" data-src="assets/images/soundcloud.png"
-										     src="assets/images/soundcloud.png" alt="SoundCloud @ akravitzmusic" />
-							<span class="item-title text-center">SoundCloud @ akravitzmusic</span>
-						</a>
-					</div>
-					<div class="subscribe-container">
-						<p class="subscribe-text">Subscribe for updates<br/>
-						Or subscribe your friend<br/>
-						(I won't spam you, but I will spam them)</p>
-						<form id="subscriptionForm">
-							<input type="text" id="nameInput" name="name" placeholder="Your Name (Optional)" />
-							<input type="email" id="emailInput" class="email-input" placeholder="Enter your email" required>
-							<button type="submit" class="subscribe-button">Subscribe</button>
-							<p id="subscriptionMessage" class="subscription-message"></p>
-							<div class="loading" id="loadingSpinner"></div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			document.getElementById('subscriptionForm').addEventListener('submit', async function (event) {
-				event.preventDefault();
-				const email = document.getElementById('emailInput').value;
-				const name = document.getElementById('nameInput').value;
-
-				// Show loading spinner and disable form
-				const form = document.getElementById('subscriptionForm');
-				const loadingSpinner = document.getElementById('loadingSpinner');
-				loadingSpinner.style.display = 'block';
-				form.classList.add('subscription-form-overlay');
-
-				try {
-					const response = await fetch('https://script.google.com/macros/s/AKfycbya1P1ji0X_lsZj7pXsK-i56UUJOfgCGtk98uI1C0DmGdqzHpJUcBLqrN_qgUInjDk/exec', {
-						redirect: 'follow',
-						method: 'POST',
-						body: JSON.stringify({ name: name, email: email }),
-						headers: {
-							'Content-Type': 'text/plain;charset=utf-8'
-						}
-					});
-
-					const result = await response.json();
-					if (result.status === 'success') {
-						document.getElementById('subscriptionMessage').textContent = 'Subscription successful!';
-					} else {
-						document.getElementById('subscriptionMessage').textContent = 'Something went wrong. Please try again.';
-					}
-				} catch (error) {
-					document.getElementById('subscriptionMessage').textContent = 'Error: Unable to subscribe at this time.';
-				} finally {
-					// Hide loading spinner and enable form
-					loadingSpinner.style.display = 'none';
-					form.classList.remove('subscription-form-overlay');
-				}
-			});
-		</script>
-
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A KRAVITZ</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQHXRVW9D7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NQHXRVW9D7');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+
