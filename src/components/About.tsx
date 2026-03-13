@@ -11,7 +11,7 @@ export default function About() {
         </p>
         
         <p className="font-drama italic text-4xl md:text-6xl lg:text-7xl text-digital-accent leading-tight">
-          I try to be vulnerable. But don't ask me about it 🙃
+          I try to tell the truth.<br/>It’s worse for everyone involved.
         </p>
       </div>
     </section>
