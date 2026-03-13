@@ -32,8 +32,7 @@ export default function LatestRelease() {
             Better Views
           </h3>
           <p className="font-drama italic text-xl md:text-2xl opacity-80 mb-8 leading-relaxed">
-            "In the city of angels, why do my demons get the better views?" <br/><br/>
-            A track about trading a paycheck for a passion, drowning in sealed rooms, and the exhausting honesty of chasing a dream.
+            "In the city of angels, why do my demons get the better views?" 
           </p>
           <a
             href="https://soundcloud.com/akravitzmusic/better-views?si=d1966ba389b34949b7e8f9d3264e7220&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"

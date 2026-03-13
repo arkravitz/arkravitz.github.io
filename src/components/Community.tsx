@@ -43,7 +43,7 @@ export default function Community() {
             Join the weird part of the internet.
           </h2>
           <p className="font-drama italic text-xl md:text-2xl opacity-80 mb-12">
-            I won't spam you.<br />But I might emotionally overshare.
+            I won't spam you.<br />But I will overshare 🤝
           </p>
 
           {status === 'success' ? (
