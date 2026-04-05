@@ -24,7 +24,6 @@ export default function Contact() {
             Email about coaching
           </a>
         </div>
-        <p className="contact-note">Direct inbox: <strong>akravitzmusic@gmail.com</strong></p>
       </div>
     </section>
   );
