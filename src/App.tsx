@@ -11,6 +11,7 @@ import Coaching from './components/Coaching';
 import Music from './components/Music';
 import Merch from './components/Merch';
 import Ideas from './components/Ideas';
+import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -59,6 +60,7 @@ export default function App() {
         <Music />
         <Merch />
         <Ideas />
+        <Newsletter />
         <Contact />
       </main>
 
