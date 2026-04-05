@@ -1,7 +1,8 @@
 import React from 'react';
 
 const platforms = [
-  { name: 'Instagram', url: 'https://www.instagram.com/akravitzmusic', meta: '9,333 followers' },
+  { name: 'Instagram', url: 'https://www.instagram.com/akravitzmusic', meta: 'Visual journal' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@akravitzmusic', meta: 'Short-form clips' },
   { name: 'Spotify', url: 'https://open.spotify.com/artist/42l1bkQwYGfGjIEj2LMGEn', meta: 'Artist profile' },
   { name: 'YouTube', url: 'https://www.youtube.com/@akravitzmusic', meta: 'Videos and releases' },
   { name: 'YouTube Music', url: 'https://music.youtube.com/channel/UCJ8tS4lATNUpJiFM7MWbycg', meta: 'Streaming' },
@@ -44,8 +45,8 @@ export default function Music() {
 
         <div className="music-card gsap-reveal">
           <div className="music-card-header">
-            <span className="eyebrow">Selected signal</span>
-            <p>Instagram audience: 9,333 followers</p>
+            <span className="eyebrow">Elsewhere</span>
+            <p>Listen, watch, or follow along</p>
           </div>
 
           <div className="platform-list">
