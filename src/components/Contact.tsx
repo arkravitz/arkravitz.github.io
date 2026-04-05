@@ -13,20 +13,18 @@ export default function Contact() {
         <div className="contact-actions">
           <a
             className="button button-primary"
-            href="mailto:hello@akravitzmusic.com?subject=Consulting%20Inquiry"
+            href="mailto:akravitzmusic@gmail.com?subject=Consulting%20Inquiry"
           >
             Email about consulting
           </a>
           <a
             className="button button-secondary"
-            href="mailto:hello@akravitzmusic.com?subject=AI%20Coaching%20Inquiry"
+            href="mailto:akravitzmusic@gmail.com?subject=AI%20Coaching%20Inquiry"
           >
             Email about coaching
           </a>
         </div>
-        <p className="contact-note">
-          Replace <strong>hello@akravitzmusic.com</strong> with your preferred inbox if needed.
-        </p>
+        <p className="contact-note">Direct inbox: <strong>akravitzmusic@gmail.com</strong></p>
       </div>
     </section>
   );
