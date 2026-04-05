@@ -5,10 +5,12 @@ import { useGSAP } from '@gsap/react';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import LatestRelease from './components/LatestRelease';
 import About from './components/About';
-import Community from './components/Community';
-import Socials from './components/Socials';
+import Consulting from './components/Consulting';
+import Coaching from './components/Coaching';
+import Merch from './components/Merch';
+import Ideas from './components/Ideas';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,44 +18,46 @@ gsap.registerPlugin(ScrollTrigger);
 export default function App() {
   const container = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    const sections = gsap.utils.toArray('section, footer');
-    
-    sections.forEach((section: any) => {
-      const reveals = section.querySelectorAll('.gsap-reveal');
-      if (reveals.length === 0) return;
+  useGSAP(
+    () => {
+      const reveals = gsap.utils.toArray<HTMLElement>('.gsap-reveal');
 
-      gsap.fromTo(
-        reveals,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.2,
-          ease: 'power3.out',
-          stagger: 0.08,
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 85%',
-            toggleActions: 'play none none reverse',
+      reveals.forEach((element) => {
+        gsap.fromTo(
+          element,
+          { opacity: 0, y: 28 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.9,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: element,
+              start: 'top 88%',
+              toggleActions: 'play none none reverse',
+            },
           },
-        }
-      );
-    });
-  }, { scope: container });
+        );
+      });
+    },
+    { scope: container },
+  );
 
   return (
-    <div ref={container} className="relative w-full min-h-screen selection:bg-digital-accent selection:text-white">
-      <div className="noise-overlay"></div>
-      
+    <div ref={container} className="site-shell selection:bg-brand-accent selection:text-brand-ink">
+      <div className="ambient-orb ambient-orb-left" aria-hidden="true" />
+      <div className="ambient-orb ambient-orb-right" aria-hidden="true" />
+
       <Navbar />
-      
+
       <main>
         <Hero />
-        <Socials />
-        <LatestRelease />
         <About />
-        <Community />
+        <Consulting />
+        <Coaching />
+        <Merch />
+        <Ideas />
+        <Contact />
       </main>
 
       <Footer />
