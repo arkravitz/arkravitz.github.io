@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Consulting from './components/Consulting';
 import Coaching from './components/Coaching';
+import Music from './components/Music';
 import Merch from './components/Merch';
 import Ideas from './components/Ideas';
 import Contact from './components/Contact';
@@ -55,6 +56,7 @@ export default function App() {
         <About />
         <Consulting />
         <Coaching />
+        <Music />
         <Merch />
         <Ideas />
         <Contact />
